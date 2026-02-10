@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 4.3.2
+  version: "4.4.0"
 
 package:
   name: fhirclient
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fhirclient/fhirclient-${{ version }}.tar.gz
-  sha256: e71881a06167681e53d780c1a581d3e18cca3a93e789ca21acf2d8374a3c59a6
+  sha256: 922d6110f941741a67fdb8dc3afdeba21b8d1f30beafde7d2fbe523cf9192188
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
